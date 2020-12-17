@@ -70,7 +70,7 @@ class _ClientRecordsState extends State<ClientRecords> {
               Padding(
                 padding: const EdgeInsets.only(top: 12.0),
                 child: SizedBox(
-                  height: 500,
+                  height: 400,
                   width: 350,
                   child: Container(
                     color: Colors.white,
@@ -80,10 +80,14 @@ class _ClientRecordsState extends State<ClientRecords> {
                         Padding(
                           padding: const EdgeInsets.only(top: 8.0, left: 8, right: 8, bottom: 20),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Text("Name", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),),
-                              Image(image: AssetImage('images/ic_filter.png')),
+                              Icon(Icons.arrow_drop_down, color: Colors.grey,),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 190.0),
+                                child: Image(image: AssetImage('images/ic_filter.png')),
+                              ),
                             ],
                           ),
                         ),
@@ -107,7 +111,7 @@ class _ClientRecordsState extends State<ClientRecords> {
                   bottom: 15,
                   right: 15,
                   child: FloatingActionButton(
-                    foregroundColor: AppColors.accentcolor,
+                    backgroundColor: AppColors.accentcolor,
                     onPressed: null,
                     child: Icon(Icons.add, color: Colors.white,),
                       )),

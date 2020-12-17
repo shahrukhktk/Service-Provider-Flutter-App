@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:service_provider/Assets/app_assets.dart';
 
 class AccountsScreen extends StatefulWidget {
@@ -207,6 +208,104 @@ class _AccountsScreenState extends State<AccountsScreen> {
               ],
             ),
           ),
+
+          //Progress Bar 1
+          Padding(
+            padding: const EdgeInsets.only(left: 12, top: 25.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text("Total Amount Earned", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey),),
+                Padding(
+                  padding: const EdgeInsets.only(right: 20.0),
+                  child: GestureDetector(
+                    onTap: () {},
+                    child: Text("ZAR 2 400", style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal, color: AppColors.themecolor,),),),
+                ),
+              ],
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0, top: 10, right: 8.0,),
+            child: Center(
+              child: LinearPercentIndicator(
+                width: 300.0,
+                lineHeight: 10.0,
+                percent: 0.4,
+                backgroundColor: Colors.grey,
+                progressColor: AppColors.themecolor,
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(right: 20.0, top: 8),
+            child: Text("Last Updated: 25th June 2020", style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.grey), textAlign: TextAlign.end,),
+          ),
+
+          //Progress Bar 2
+          Padding(
+            padding: const EdgeInsets.only(left: 12, top: 25.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text("Data Plan - Storage", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey),),
+                Padding(
+                  padding: const EdgeInsets.only(right: 20.0),
+                  child: GestureDetector(
+                    onTap: () {},
+                    child: Text("500MB/30GB", style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal, color: AppColors.themecolor,),),),
+                ),
+              ],
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0, top: 10, right: 8.0,),
+            child: Center(
+              child: LinearPercentIndicator(
+                width: 300.0,
+                lineHeight: 10.0,
+                percent: 0.2,
+                backgroundColor: Colors.grey,
+                progressColor: AppColors.themecolor,
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(right: 20.0, top: 8),
+            child: Text("Last Updated: 5th June 2020", style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.grey), textAlign: TextAlign.end,),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(top: 25.0, left: 8, right: 8),
+            child: Container(
+              height: 100,
+              child: Card(
+                color: AppColors.themecolor,
+                elevation: 2,
+                shadowColor: Colors.black12,
+                child: Center(
+                  child: ListTile(
+                    leading: Image(image: AssetImage('images/ic_support.png'),),
+                    title: Text('Help & Support Line', style: TextStyle(fontSize: 17, color: Colors.white),),
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text('24/7 Chat Support', style: TextStyle(fontSize: 14, color: Colors.white70),),
+                    ),
+                    trailing: FloatingActionButton(
+                      backgroundColor: Colors.white,
+                      child: Icon(Icons.arrow_forward, color: AppColors.themecolor,),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          )
 
         ],
       ),
