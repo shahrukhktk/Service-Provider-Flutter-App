@@ -60,6 +60,7 @@ flutter:
     - images/storage_icon.png
     - images/circleavater.png
     - images/ic_support.png
+    - images/go_backbtn.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

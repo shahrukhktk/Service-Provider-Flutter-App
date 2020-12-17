@@ -7,6 +7,8 @@ class  AppColors
   static Color themecolor = Color(0xFF252C4A);
   static Color accentcolor = Color(0xFF78BEBD);
   static Color browncolor = Color(0xFFB36647);
+  static Color darkbrown = Color(0xFF443843);
+
 
 }
 
