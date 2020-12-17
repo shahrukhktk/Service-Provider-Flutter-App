@@ -274,7 +274,7 @@ class _SummaryScreenState extends State<SummaryScreen> {
           ),
 
           Padding(
-            padding: const EdgeInsets.only(top: 80.0, left: 8, right: 8),
+            padding: const EdgeInsets.only(top:50.0, left: 8, right: 8),
             child: Container(
               height: 100,
               child: Card(
