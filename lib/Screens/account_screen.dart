@@ -154,7 +154,7 @@ class _AccountsScreenState extends State<AccountsScreen> {
                                   Text("Monthly Card", style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal, color: Colors.white,),),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Text("500 mins monthly subscription", style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal, color: Colors.white,),),
+                                    child: Text("500 mins monthly subscription", style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal, color: Colors.white,),),
                                   ),
 
                                   Row(
@@ -282,7 +282,7 @@ class _AccountsScreenState extends State<AccountsScreen> {
           ),
 
           Padding(
-            padding: const EdgeInsets.only(top: 25.0, left: 8, right: 8),
+            padding: const EdgeInsets.only(top: 30.0, left: 8, right: 8),
             child: Container(
               height: 100,
               child: Card(
@@ -292,10 +292,10 @@ class _AccountsScreenState extends State<AccountsScreen> {
                 child: Center(
                   child: ListTile(
                     leading: Image(image: AssetImage('images/ic_support.png'),),
-                    title: Text('Help & Support Line', style: TextStyle(fontSize: 17, color: Colors.white),),
+                    title: Text('Help & Support Line', style: TextStyle(fontSize: 14, color: Colors.white, fontFamily: 'Poppins'),),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
-                      child: Text('24/7 Chat Support', style: TextStyle(fontSize: 14, color: Colors.white70),),
+                      child: Text('24/7 Chat Support', style: TextStyle(fontSize: 12, color: Colors.white70, fontFamily: 'Poppins'),),
                     ),
                     trailing: FloatingActionButton(
                       backgroundColor: Colors.white,
@@ -305,7 +305,7 @@ class _AccountsScreenState extends State<AccountsScreen> {
                 ),
               ),
             ),
-          )
+          ),
 
         ],
       ),

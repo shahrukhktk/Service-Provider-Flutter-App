@@ -85,7 +85,7 @@ class _ClientRecordsState extends State<ClientRecords> {
                               Text("Name", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),),
                               Icon(Icons.arrow_drop_down, color: Colors.grey,),
                               Padding(
-                                padding: const EdgeInsets.only(left: 190.0),
+                                padding: const EdgeInsets.only(left: 180.0),
                                 child: Image(image: AssetImage('images/ic_filter.png')),
                               ),
                             ],
