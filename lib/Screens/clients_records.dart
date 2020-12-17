@@ -46,10 +46,10 @@ class _ClientRecordsState extends State<ClientRecords> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Client Records", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),),
+                    Text("Client Records", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: 'Poppins'),),
                     Padding(
                       padding: const EdgeInsets.only(top: 15.0),
-                      child: Text("32 items . 350 Mb", style: TextStyle(fontSize: 13, fontWeight: FontWeight.normal, color: Colors.grey),),
+                      child: Text("32 items . 350 Mb", style: TextStyle(fontSize: 13, fontWeight: FontWeight.normal, color: Colors.grey, fontFamily: 'Poppins'),),
                     ),
                   ],
                 ),
@@ -62,7 +62,7 @@ class _ClientRecordsState extends State<ClientRecords> {
 
           Padding(
             padding: const EdgeInsets.only(top: 15.0),
-            child: Text("Last update 10 October 2020 .", style: TextStyle(fontSize: 11, fontWeight: FontWeight.normal, color: Colors.grey),),
+            child: Text("Last update 10 October 2020 .", style: TextStyle(fontSize: 11, fontWeight: FontWeight.normal, color: Colors.grey, fontFamily: 'Poppins'),),
           ),
 
           Stack(

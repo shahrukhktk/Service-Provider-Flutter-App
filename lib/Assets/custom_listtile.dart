@@ -168,7 +168,7 @@ class notification_alert extends StatelessWidget {
       leading: Icon(Icons.notifications_none, color: Colors.white,),
       title: Text('$title',
         style: TextStyle(
-            fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.white
+            fontSize: 16.0, fontWeight: FontWeight.w500, color: Colors.white, fontFamily: 'Poppins'
         ),
       ),
     );
@@ -189,7 +189,7 @@ class HelpandFeeback extends StatelessWidget {
       leading: Icon(Icons.help_outline, color: Colors.white,),
       title: Text('$title',
         style: TextStyle(
-            fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.white
+            fontSize: 16.0, fontWeight: FontWeight.w500, color: Colors.white, fontFamily: 'Poppins'
         ),
       ),
     );
@@ -210,7 +210,7 @@ class returnBtn extends StatelessWidget {
       leading: Image(image: AssetImage('images/ic_return.png'),),
       title: Text('$title',
         style: TextStyle(
-            fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.white
+            fontSize: 16.0, fontWeight: FontWeight.w500, color: Colors.white, fontFamily: 'Poppins'
         ),
       ),
     );

@@ -17,7 +17,7 @@ class _MyPersonalStorageState extends State<MyPersonalStorage> {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 35.0),
-            child: Text("My Personal Drive", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),),
+            child: Text("My Personal Drive", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: 'Poppins'),),
           ),
 
           Padding(
@@ -37,9 +37,9 @@ class _MyPersonalStorageState extends State<MyPersonalStorage> {
                       Text("Free Storage", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),),
                       Padding(
                         padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                        child: Text("7.5 Gb", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.grey),),
+                        child: Text("7.5 Gb", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.grey, fontFamily: 'Poppins'),),
                       ),
-                      Text("From Total 10 Gb", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.grey),),
+                      Text("From Total 10 Gb", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Colors.grey, fontFamily: 'Poppins'),),
                     ],
                   ),
                 ),
@@ -66,7 +66,7 @@ class _MyPersonalStorageState extends State<MyPersonalStorage> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(25),
               ),
-              child: Center(child: Text('Upgrade Storage', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),),),
+              child: Center(child: Text('Upgrade Storage', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: 'Poppins'),),),
             ),
           )),
 
