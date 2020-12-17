@@ -57,6 +57,8 @@ flutter:
     - images/ic_filter.png
     - images/ic_return.png
     - images/storage_icon.png
+    - images/circleavater.png
+    -
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
